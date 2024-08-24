@@ -7,7 +7,11 @@ FORTIS (Força, Organização, Resiliência, Transformação e Inspiração Saud
 #Autores
 
 João Lucas Veiga Robalinho Ferraz - jlvrf@cesar.school
+
 Lucas Rodrigues Campos - lrc@cesar.school
+
 Luis Guilherme Alves Lauria Soares - lgals@cesar.school
+
 Luiz Felipe Andreto Nogueira - lfan@cesar.school
+
 Marina Hoffmann Guimarães - mhg@cesar.school
