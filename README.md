@@ -1,6 +1,6 @@
 # FORTIS
 
-![BANNER](imagens\banner.png)
+![banner](https://github.com/user-attachments/assets/759240ee-e3f1-4af8-9e58-f626e634feb3)
 
 ## Descrição:
 
