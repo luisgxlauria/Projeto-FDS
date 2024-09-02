@@ -43,6 +43,8 @@ Luiz Felipe Andreto Nogueira - lfan@cesar.school
 
 Marina Hoffmann Guimarães - mhg@cesar.school
 
+Felipe Barros de Carvalho - fbc@cesar.school
+
 ## Licença📃
 Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/MIT)
 
