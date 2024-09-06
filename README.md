@@ -19,7 +19,7 @@ FORTIS (Força, Organização, Resiliência, Transformação e Inspiração Saud
 - Sugestões de alimentação
 - Planos de condicionamento físico
 - Socialização e progresso compartilhado
-<br>
+  
 # Tecnologias 👾
 
 - Back-End: **Django.** 
@@ -27,14 +27,14 @@ FORTIS (Força, Organização, Resiliência, Transformação e Inspiração Saud
 - Prototipação: **Lo-Fi (Figma)**
 - Banco de dados: **Sqlite/PostgreSQL.**
 - Plataforma de hospedagem: **Azure.**
-<br>
+
 # Meios 🛠
 
 - **Jira**: Utilizado para o gerenciamento do projeto.
 - **GitHub**: Utilizado para a colaboração do projeto pela equipe.
 - **Discord** e **Whatsapp**: Utilizado para a comunicação da equipe.
 - **Figma**: Utilizado para prototipação.
-<br>
+
 # Autores:
 
 Felipe Barros de Carvalho - fbc@cesar.school
@@ -48,7 +48,7 @@ Luis Guilherme Alves Lauria Soares - lgals@cesar.school
 Luiz Felipe Andreto Nogueira - lfan@cesar.school
 
 Marina Hoffmann Guimarães - mhg@cesar.school
-<br>
+
 # 🔨 Processo
 <br>
 
