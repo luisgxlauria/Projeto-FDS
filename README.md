@@ -78,7 +78,7 @@ O sprint 1 do Projeto FDS Fortis tem como objetivo desenvolver funcionalidades e
 Cada funcionalidade foi cuidadosamente selecionada para integrar a plataforma, proporcionando uma ferramenta abrangente que ajuda os usuários a alcançar e manter um estilo de vida saudável de maneira organizada e motivadora.
 
 ## Primeira entrega 
-link do repositório no Jira, onde estão as histórias:
+Link do repositório no Jira, onde estão as histórias:
 https://cesar-team-mvy0zfzu.atlassian.net/jira/projects?selectedProjectType=software
-link do protótipo realizado no FIGMA: 
+Link do protótipo realizado no FIGMA: 
 https://www.figma.com/proto/Vo7Jd6HeI0TCrXF3rnj5kF/FORTIS?node-id=21-414&t=ZfqKMHSWJwOW1rOU-1
