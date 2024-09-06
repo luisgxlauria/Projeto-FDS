@@ -74,8 +74,7 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 
 ### 📄 Jira Backlog
 
-  <img src="![image](https://github.com/user-attachments/assets/aa0d7c1b-9c33-4646-a442-7bab77faed0c)
-" alt="Repository Size">
+  <img src="https://github.com/user-attachments/assets/79e0bcd9-bda3-42ff-96be-403f839acebc" alt="Repository Size">
 
 <br>
 
