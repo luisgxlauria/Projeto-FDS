@@ -79,6 +79,9 @@ Cada funcionalidade foi cuidadosamente selecionada para integrar a plataforma, p
 
 ## Primeira entrega 
 Link do repositório no Jira, onde estão as histórias:
+
 https://cesar-team-mvy0zfzu.atlassian.net/jira/projects?selectedProjectType=software
+
 Link do protótipo realizado no FIGMA: 
+
 https://www.figma.com/proto/Vo7Jd6HeI0TCrXF3rnj5kF/FORTIS?node-id=21-414&t=ZfqKMHSWJwOW1rOU-1
