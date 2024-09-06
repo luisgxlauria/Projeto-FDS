@@ -74,13 +74,15 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 
 ### 📄 Jira Backlog
 
-  <img src="https://cdn.discordapp.com/attachments/834546379140890624/1281585480672219207/Sprint_1_.png?ex=66dc40fd&is=66daef7d&hm=8fe3b3d054f08daeec7fc1c892238b83df6e7b435af2ab16ce180209ff88dac0&" alt="Repository Size">
+  <img src="![image](https://github.com/user-attachments/assets/aa0d7c1b-9c33-4646-a442-7bab77faed0c)
+" alt="Repository Size">
 
 <br>
 
 ### 📄 Jira Board 
 
-  <img src="https://cdn.discordapp.com/attachments/834546379140890624/1281585448740978698/image.png?ex=66dc40f5&is=66daef75&hm=87ea419637c7be7a8ee6cfc6e82737150ef7b444f92f58d4080654cef32e2d0d&" alt="Repository Size">
+  <img src="![image](https://github.com/user-attachments/assets/ae724939-0d11-47d4-9524-7517542b3200)
+" alt="Repository Size">
 
 <br>
 
