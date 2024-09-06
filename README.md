@@ -50,6 +50,22 @@ Luiz Felipe Andreto Nogueira - lfan@cesar.school
 Marina Hoffmann Guimarães - mhg@cesar.school
 
 <details>
+<summary>Links</summary>
+<br>
+<p style="text-align: center; text-decoration: none;">
+  <a href="https://cesar-team-mvy0zfzu.atlassian.net/jira/software/projects/SCRUM/boards/1" style="text-decoration: none;">
+    <span>🔗 Jira</span>
+  </a>
+</p>
+  <br>
+<p style="text-align: center; text-decoration: none;">
+  <a href="https://www.figma.com/design/Vo7Jd6HeI0TCrXF3rnj5kF/FORTIS?node-id=0-1&t=AL28ZR4ofulLp0Oe-1" style="text-decoration: none;">
+    <span>🔗 Figma</span>
+  </a>
+</p>
+</details>
+
+<details>
 <summary>📧 Entrega 1</summary>
 
 <br>
