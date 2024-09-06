@@ -55,33 +55,40 @@ Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/M
 
 [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/sourcerer-io/hall-of-fame/blob/master/LICENSE.md)
 
-## Jira
+<details>
+<summary>📧 Entrega 1</summary>
 
-![sprint](https://cdn.discordapp.com/attachments/834546379140890624/1281585480672219207/Sprint_1_.png?ex=66dc40fd&is=66daef7d&hm=8fe3b3d054f08daeec7fc1c892238b83df6e7b435af2ab16ce180209ff88dac0&)
-![board](https://cdn.discordapp.com/attachments/834546379140890624/1281585448740978698/image.png?ex=66dc40f5&is=66daef75&hm=87ea419637c7be7a8ee6cfc6e82737150ef7b444f92f58d4080654cef32e2d0d&)
+<br>
 
-## Objetivo
+### 📄 Jira Backlog
 
-O sprint 1 do Projeto FDS Fortis tem como objetivo desenvolver funcionalidades essenciais para uma plataforma de bem-estar e saúde que permita aos usuários gerenciar diversos aspectos de sua saúde física e mental. As histórias de usuário incluídas neste sprint são:
+  <img src="https://cdn.discordapp.com/attachments/834546379140890624/1281585480672219207/Sprint_1_.png?ex=66dc40fd&is=66daef7d&hm=8fe3b3d054f08daeec7fc1c892238b83df6e7b435af2ab16ce180209ff88dac0&" alt="Repository Size">
 
-1. Permitir que o usuário registre manualmente a quantidade de água que bebe para monitorar sua hidratação.
-2. Facilitar o gerenciamento do peso do usuário, permitindo que ele registre e acompanhe seu peso regularmente.
-3. Oferecer alertas de saúde, mantendo o usuário informado sobre considerações importantes para seu bem-estar.
-4. Prover técnicas para redução do estresse, ajudando o usuário a gerenciar e diminuir seus níveis de estresse de forma eficaz.
-5. Permitir a organização e monitoramento de treinos em uma plataforma virtual.
-6. Incentivar a consecução de metas de saúde através de recompensas e incentivos.
-7. Monitorar a ingestão de medicamentos e suplementos, garantindo que o usuário mantenha sua rotina de saúde.
-8. Receber sugestões personalizadas de alimentação saudável.
-9. Criar planos de condicionamento físico que atendam metas específicas do usuário.
-10. Socializar com amigos na plataforma e visualizar o progresso mútuo.
-    
-Cada funcionalidade foi cuidadosamente selecionada para integrar a plataforma, proporcionando uma ferramenta abrangente que ajuda os usuários a alcançar e manter um estilo de vida saudável de maneira organizada e motivadora.
+<br>
 
-## Primeira entrega 
-Link do repositório no Jira, onde estão as histórias:
+### 📄 Jira Board 
 
-https://cesar-team-mvy0zfzu.atlassian.net/jira/projects?selectedProjectType=software
+  <img src="https://cdn.discordapp.com/attachments/834546379140890624/1281585448740978698/image.png?ex=66dc40f5&is=66daef75&hm=87ea419637c7be7a8ee6cfc6e82737150ef7b444f92f58d4080654cef32e2d0d&" alt="Repository Size">
 
-Link do protótipo realizado no FIGMA: 
+<br>
 
-https://www.figma.com/proto/Vo7Jd6HeI0TCrXF3rnj5kF/FORTIS?node-id=21-414&t=ZfqKMHSWJwOW1rOU-1
+### 📄 Prototipação Lo-Fi
+
+<p style="text-align: center; text-decoration: none;">
+  <a href="https://www.figma.com/design/Vo7Jd6HeI0TCrXF3rnj5kF/FORTIS?node-id=0-1&t=AL28ZR4ofulLp0Oe-1" style="text-decoration: none;">
+    <span>🔗 Figma</span>
+  </a>
+</p>
+
+<br>
+
+### 🎥 Screencast do Protótipo
+
+<p style="text-align: center; text-decoration: none;">
+  <a href="" style="text-decoration: none;">
+    <span>🔗 Screencast do protótipo Lo-Fi (1)</span>
+  </a>
+</p>
+
+<br>
+</details>
