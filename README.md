@@ -49,12 +49,6 @@ Luiz Felipe Andreto Nogueira - lfan@cesar.school
 
 Marina Hoffmann Guimarães - mhg@cesar.school
 
-## Licença📃
-Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/MIT)
-
-
-[![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/sourcerer-io/hall-of-fame/blob/master/LICENSE.md)
-
 <details>
 <summary>📧 Entrega 1</summary>
 
@@ -92,3 +86,21 @@ Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/M
 
 <br>
 </details>
+
+<details>
+<summary>📧 Entrega 2</summary>
+</details>
+
+<details>
+<summary>📧 Entrega 3</summary>
+</details>
+
+<details>
+<summary>📧 Entrega 4</summary>
+</details>
+
+## Licença📃
+Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/MIT)
+
+
+[![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/sourcerer-io/hall-of-fame/blob/master/LICENSE.md)
