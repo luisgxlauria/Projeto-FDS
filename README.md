@@ -80,8 +80,7 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 
 ### 📄 Jira Board 
 
-  <img src="![image](https://github.com/user-attachments/assets/ae724939-0d11-47d4-9524-7517542b3200)
-" alt="Repository Size">
+  <img src="https://github.com/user-attachments/assets/b70c943d-c53d-4f7c-a3f6-7094c42383ee" alt="Repository Size">
 
 <br>
 
