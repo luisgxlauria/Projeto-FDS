@@ -33,7 +33,7 @@ FORTIS (Força, Organização, Resiliência, Transformação e Inspiração Saud
 - **Jira**: Utilizado para o gerenciamento do projeto.
 - **GitHub**: Utilizado para a colaboração do projeto pela equipe.
 - **Discord** e **Whatsapp**: Utilizado para a comunicação da equipe.
-- **Figma**: Utilizado para prototipação 
+- **Figma**: Utilizado para prototipação.
 
 # Autores:
 
