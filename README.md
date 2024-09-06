@@ -49,3 +49,5 @@ Felipe Barros de Carvalho - fbc@cesar.school
 Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/MIT)
 
 [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/sourcerer-io/hall-of-fame/blob/master/LICENSE.md)
+
+![sprint](https://cdn.discordapp.com/attachments/834546379140890624/1281585480672219207/Sprint_1_.png?ex=66dc40fd&is=66daef7d&hm=8fe3b3d054f08daeec7fc1c892238b83df6e7b435af2ab16ce180209ff88dac0&)
