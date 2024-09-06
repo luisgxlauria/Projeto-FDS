@@ -51,3 +51,4 @@ Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/M
 [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/sourcerer-io/hall-of-fame/blob/master/LICENSE.md)
 
 ![sprint](https://cdn.discordapp.com/attachments/834546379140890624/1281585480672219207/Sprint_1_.png?ex=66dc40fd&is=66daef7d&hm=8fe3b3d054f08daeec7fc1c892238b83df6e7b435af2ab16ce180209ff88dac0&)
+![board](https://cdn.discordapp.com/attachments/834546379140890624/1281585448740978698/image.png?ex=66dc40f5&is=66daef75&hm=87ea419637c7be7a8ee6cfc6e82737150ef7b444f92f58d4080654cef32e2d0d&)
