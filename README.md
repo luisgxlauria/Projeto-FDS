@@ -5,7 +5,7 @@
 ## Descrição:
 
 FORTIS (Força, Organização, Resiliência, Transformação e Inspiração Saudável) é um Software inovador, fundado por estudantes de ciência da computação, feito para facilitar o rastreamento de atividades físicas e bem-estar, projetado para ajudá-lo a alcançar suas metas de saúde, bem-estar e condicionamento físico. Com funcionalidades intuitivas e uma interface amigável, o FORTIS torna o acompanhamento do seu progresso mais fácil e eficaz.
-<br>
+
 # Funcionalidades 💡
 ## De acordo com as caracteristícas do usuário.
 
@@ -19,7 +19,6 @@ FORTIS (Força, Organização, Resiliência, Transformação e Inspiração Saud
 - Sugestões de alimentação
 - Planos de condicionamento físico
 - Socialização e progresso compartilhado
-
 <br>
 # Tecnologias 👾
 
@@ -28,7 +27,6 @@ FORTIS (Força, Organização, Resiliência, Transformação e Inspiração Saud
 - Prototipação: **Lo-Fi (Figma)**
 - Banco de dados: **Sqlite/PostgreSQL.**
 - Plataforma de hospedagem: **Azure.**
-
 <br>
 # Meios 🛠
 
