@@ -117,7 +117,7 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 <details>
 <summary>📧 Entrega 4</summary>
 </details>
-<br>
+
 ## Licença📃
 Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/MIT)
 
