@@ -20,6 +20,14 @@ FORTIS (Força, Organização, Resiliência, Transformação e Inspiração Saud
 - Planos de condicionamento físico
 - Socialização e progresso compartilhado
   
+- Planejador de Refeições: Sugestões de dietas equilibradas, planos de refeições personalizados e receitas saudáveis, com foco no objetivo do usuário.
+
+- Registro de Hidratação: Lembretes e monitoramento da ingestão de água ao longo do dia.
+
+- Desafios e Metas: Funcionalidade para definir metas de exercícios para a saúde e bem-estar podendo, participar de desafios motivacionais, com sistema de ranking.
+
+- Comunidade e Suporte Social: Fóruns e grupos de apoio para interagir com outros usuários, trocar experiências e receber suporte.
+
 # Tecnologias 👾
 
 - Back-End: **Django.** 
@@ -33,11 +41,14 @@ FORTIS (Força, Organização, Resiliência, Transformação e Inspiração Saud
 - **Jira**: Utilizado para o gerenciamento do projeto.
 - **GitHub**: Utilizado para a colaboração do projeto pela equipe.
 - **Discord** e **Whatsapp**: Utilizado para a comunicação da equipe.
+
 - **Figma**: Utilizado para prototipação.
 
 # Autores:
 
 Felipe Barros de Carvalho - fbc@cesar.school
+
+# Autores:
 
 João Lucas Veiga Robalinho Ferraz - jlvrf@cesar.school
 
@@ -120,5 +131,7 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 ## Licença📃
 Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/MIT)
 
+## Licença📃
+Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/MIT) 
 
 [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/sourcerer-io/hall-of-fame/blob/master/LICENSE.md)
