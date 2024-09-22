@@ -17,6 +17,8 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from fortisapp.views import PaginaInicialView, cadastroView, loginView, homeView, hidratacaoView
 
 urlpatterns = [
@@ -26,5 +28,7 @@ urlpatterns = [
     path('login/', loginView.as_view(), name = "login"),
     path('home/', homeView.as_view(), name= "home"),
     path('hidratacao/', hidratacaoView.as_view(), name= "hidratacao"),
-    
 ] 
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
