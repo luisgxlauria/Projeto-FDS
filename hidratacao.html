@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="{% static 'hidratacao/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Hidratação</title>
+</head>
+<body>
+    <nav class="menu"></nav>
+    <a href="#home" tabindex="1">Home</a>
+    <a href="#hidratacao" tabindex="2">Hidratação</a>
+    <a href="#meupeso" tabindex="3">Meu peso</a>
+    <a href="#meustreinos" tabindex="4">Meus treinos</a>
+    <a href="#reduzirestresse" tabindex="5">Reduzir estresse</a>
+    <a href="#saude" tabindex="6">Saúde</a>
+</nav>
+
+    <h1>Registro de Hidratação</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Registrar</button>
+    </form>
+
+    <div id="total">Total diário de água: {{ total_diario }} ml</div>
+    
+    <a href="{% url 'historico_hidratacao' %}">Ver Histórico de Registros</a>
+
+</body>
+</html>
