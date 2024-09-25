@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/histhidra.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de hidratação</title>
+</head>
+<body>
+    <nav class="menu"></nav>
+        <a href="#home" tabindex="1">Home</a>
+        <a href="#hidratacao" tabindex="2">Hidratação</a>
+        <a href="#meupeso" tabindex="3">Meu peso</a>
+        <a href="#meustreinos" tabindex="4">Meus treinos</a>
+        <a href="#reduzirestresse" tabindex="5">Reduzir estresse</a>
+        <a href="#saude" tabindex="6">Saúde</a>
+    </nav>
+    
+    <h1>Histórico de Hidratação</h1>
+    <div id="historico">
+        <h2>Registros do Dia</h2>
+        <ul>
+            {% for registro in historico %}
+                <li>Registrado: {{ registro.quantidade }} ml em {{ registro.data_registro }}</li>
+            {% empty %}
+                <li>Nenhum registro para hoje.</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <a href="{% url 'registro_hidratacao' %}">Voltar para o Registro</a>
+</body>
+</html>
