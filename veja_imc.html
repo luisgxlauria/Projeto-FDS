@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/veja_imc.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veja seu IMC</title>
+</head>
+<body>
+    <nav class="menu"></nav>
+    <a href="#home" tabindex="1">Home</a>
+    <a href="#hidratacao" tabindex="2">Hidratação</a>
+    <a href="#meupeso" tabindex="3">Meu peso</a>
+    <a href="#meustreinos" tabindex="4">Meus treinos</a>
+    <a href="#reduzirestresse" tabindex="5">Reduzir estresse</a>
+    <a href="#saude" tabindex="6">Saúde</a>
+</nav>
+    <main>
+        <h1>Seu Índice de Massa Corporal (IMC)</h1>
+        
+        <p>Seu IMC calculado é: <strong>{{ imc }}</strong></p>
+        <p>Classificação: <strong>{{ classificacao }}</strong></p>
+        
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                <label for="data_registro">Insira a data para registro:</label>
+                <input type="date" id="data_registro" name="data_registro" required>
+            </div>
+            <button type="submit">Registrar IMC</button>
+        </form>
+        
+        <h2>Histórico de Peso</h2>
+        <canvas id="pesoChart"></canvas>
+        
+        <h2>Histórico de IMC</h2>
+        <canvas id="imcChart"></canvas>
+        
+        <script type="application/json" id="pesoData">{{ peso_data|json_script:"pesoData" }}</script>
+        <script type="application/json" id="imcData">{{ imc_data|json_script:"imcData" }}</script>
+        <script type="application/json" id="labels">{{ datas|json_script:"labels" }}</script>
+
+        <script>
+            const pesoData = JSON.parse(document.getElementById('pesoData').textContent);
+            const imcData = JSON.parse(document.getElementById('imcData').textContent);
+            const labels = JSON.parse(document.getElementById('labels').textContent);
+            
+            const ctxPeso = document.getElementById('pesoChart').getContext('2d');
+            const pesoChart = new Chart(ctxPeso, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Peso (kg)',
+                        data: pesoData,
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        fill: false,
+                    }]
+                }
+            });
+
+            const ctxIMC = document.getElementById('imcChart').getContext('2d');
+            const imcChart = new Chart(ctxIMC, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'IMC',
+                        data: imcData,
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        fill: false,
+                    }]
+                }
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </main>
+</body>
+</html>
