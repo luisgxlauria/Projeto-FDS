@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 42px;
+    color: #333;
+    margin: 20px 0; /* Margem em cima e embaixo */
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px; /* Largura do conteúdo principal */
+    padding: 30px; /* Espaçamento interno do conteúdo */
+    background-color: #ffffff; /* Cor de fundo do conteúdo */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra do conteúdo */
+}
+
+p {
+    font-size: 18px; /* Tamanho da fonte do parágrafo */
+    color: #555; /* Cor do texto do parágrafo */
+    margin-bottom: 15px; /* Margem abaixo do parágrafo */
+    text-align: center; /* Centraliza o texto */
+}
+
+fieldset {
+    border: 1px solid #ccc; /* Borda do fieldset */
+    border-radius: 5px; /* Bordas arredondadas do fieldset */
+    padding: 15px; /* Espaçamento interno do fieldset */
+    margin-top: 20px; /* Margem acima do fieldset */
+}
+
+legend {
+    font-size: 20px; /* Tamanho da fonte do título do fieldset */
+    color: #333; /* Cor do título do fieldset */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Formulário em coluna */
+}
+
+div {
+    margin-bottom: 15px; /* Espaçamento entre os campos do formulário */
+}
+
+label {
+    margin-bottom: 5px; /* Margem abaixo do label */
+    display: block; /* Faz o label ocupar a linha inteira */
+}
+
+input[type="number"],
+input[type="date"],
+select {
+    padding: 10px; /* Espaçamento interno dos campos */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda dos campos */
+    width: 100%; /* Largura total dos campos */
+    transition: border-color 0.3s; /* Transição suave ao focar */
+}
+
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007BFF; /* Borda azul ao focar */
+    outline: none; /* Remove a borda padrão */
+}
+
+button[type="submit"] {
+    padding: 15px; /* Espaçamento interno do botão */
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    margin-top: 20px; /* Margem acima do botão */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Cor do botão ao passar o mouse */
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 90%; /* Largura responsiva do conteúdo principal */
+    }
+}
