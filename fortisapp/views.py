@@ -1,47 +1,29 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from .forms import CadastroForm,LoginForm
-from django.contrib.auth import authenticate, login as lg
-from django.contrib.auth.models import User
-
-from fortisapp.models import fortis
+from .forms import UsuarioForm
 
 class PaginaInicialView(View):
     def get(self, request):
         return render(request, 'html/PaginaInicial.html')
-     
-class homeView(View):
-    def get (self, request):
-        return render (request, "html/home.html")
-    
-class hidratacaoView(View):
-    def get(self, request):
-        return render (request, "html/hidratacao.html")
-    
-class cadastroView(View):
-    def get(self, request):
-        form = CadastroForm()
-        return render(request, 'html/cadastro.html', {'form': form})
 
-    def post(self, request):
-        form = CadastroForm(request.POST)
-        if form.is_valid():
-            nome = form.cleaned_data['nome']
-            cpf = form.cleaned_data['cpf']
-            email = form.cleaned_data['email']
-            senha = form.cleaned_data['senha']
-            return redirect('login')
-        return render(request, 'cadastro.html', {'form': form})
-    
 class loginView(View):
     def get(self, request):
-        form = LoginForm()
-        return render(request, 'html/login.html', {'form': form})
-    
-    def post(self, request):
-        form = LoginForm(request.POST)
+        return render(request, "html/login.html")
+
+class homeView(View):
+    def get(self, request):
+        return render(request, "html/home.html")
+
+class hidratacaoView(View):
+    def get(self, request):
+        return render(request, "html/hidratacao.html")
+
+def cadastroView(request):
+    if request.method == 'POST':
+        form = UsuarioForm(request.POST)
         if form.is_valid():
-            email = form.cleaned_data['email']
-            senha = form.cleaned_data['senha']
-            return redirect('home')
-        return render(request, 'login.html', {'form': form})
+            form.save()
+            return redirect('sucesso')  # Certifique-se de que existe uma URL chamada 'sucesso'
+    else:
+        form = UsuarioForm()
+    return render(request, 'html/cadastro.html', {'form': form})

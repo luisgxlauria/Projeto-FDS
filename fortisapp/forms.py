@@ -1,11 +1,19 @@
 from django import forms
+from django.contrib.auth.forms import UserCreationForm
+from .models import Usuario
 
-class CadastroForm(forms.Form):
-    nome = forms.CharField(max_length=100, label='Nome')
-    cpf = forms.CharField(max_length=14, label='CPF')  # Formato: XXX.XXX.XXX-XX
-    email = forms.EmailField(label='Email')
-    senha = forms.CharField(widget=forms.PasswordInput, label='Senha')
+class UsuarioForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    nome = forms.CharField(required=True)
 
-class LoginForm(forms.Form):
-    email = forms.EmailField(label='Email')
-    senha = forms.CharField(widget=forms.PasswordInput, label='Senha')
+    class Meta:
+        model = Usuario
+        fields = ['nome', 'email', 'cpf', 'username', 'password1', 'password2']
+
+    def save(self, commit=True):
+        user = super(UsuarioForm, self).save(commit=False)
+        user.email = self.cleaned_data['email']
+        user.nome = self.cleaned_data['nome']
+        if commit:
+            user.save()
+        return user
