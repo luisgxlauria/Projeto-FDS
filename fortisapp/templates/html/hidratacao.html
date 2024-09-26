@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,6 +7,15 @@
     <title>Página de Hidratação</title>
 </head>
 <body>
+    <nav class="menu"></nav>
+    <a href="#home" tabindex="1">Home</a>
+    <a href="#hidratacao" tabindex="2">Hidratação</a>
+    <a href="#meupeso" tabindex="3">Meu peso</a>
+    <a href="#meustreinos" tabindex="4">Meus treinos</a>
+    <a href="#reduzirestresse" tabindex="5">Reduzir estresse</a>
+    <a href="#saude" tabindex="6">Saúde</a>
+</nav>
+
     <h1>Registro de Hidratação</h1>
     <form method="POST">
         {% csrf_token %}
