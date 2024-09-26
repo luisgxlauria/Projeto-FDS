@@ -5,3 +5,7 @@ class CadastroForm(forms.Form):
     cpf = forms.CharField(max_length=14, label='CPF')  # Formato: XXX.XXX.XXX-XX
     email = forms.EmailField(label='Email')
     senha = forms.CharField(widget=forms.PasswordInput, label='Senha')
+
+class LoginForm(forms.Form):
+    email = forms.EmailField(label='Email')
+    senha = forms.CharField(widget=forms.PasswordInput, label='Senha')

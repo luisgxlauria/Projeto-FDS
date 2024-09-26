@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from .forms import CadastroForm
+from .forms import CadastroForm,LoginForm
 from django.contrib.auth import authenticate, login as lg
 from django.contrib.auth.models import User
 
@@ -10,10 +10,6 @@ class PaginaInicialView(View):
     def get(self, request):
         return render(request, 'html/PaginaInicial.html')
      
-class loginView(View):
-    def get(self, request):
-        return render(request, "html/login.html")
-
 class homeView(View):
     def get (self, request):
         return render (request, "html/home.html")
@@ -36,3 +32,16 @@ class cadastroView(View):
             senha = form.cleaned_data['senha']
             return redirect('login')
         return render(request, 'cadastro.html', {'form': form})
+    
+class loginView(View):
+    def get(self, request):
+        form = LoginForm()
+        return render(request, 'html/login.html', {'form': form})
+    
+    def post(self, request):
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            senha = form.cleaned_data['senha']
+            return redirect('home')
+        return render(request, 'login.html', {'form': form})
