@@ -3,20 +3,10 @@ body {
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 90vh;
     display: flex;
-    justify-content: center; 
-    align-items: center;     
-}
-
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 500px; 
-    padding: 70px;
-    background-color: #ffffff;
+    align-items: center;
+    flex-direction: column; /* Para alinhar o título e o formulário em coluna */
 }
 
 h1 {
@@ -26,11 +16,24 @@ h1 {
     text-align: center;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; /* O formulário vai ocupar toda a largura */
+    max-width: 700px; /* Limite máximo de largura para não ficar exagerado em telas maiores */
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    height: auto; /* Ajusta a altura para o conteúdo */
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    padding: 10px;
-    margin: 20px 0;
+    padding: 15px;
+    margin: 10px 0;
     font-size: 18px;
     border-radius: 5px;
     border: 1px solid #ccc;

@@ -19,6 +19,14 @@ class hidratacaoView(View):
     def get(self, request):
         return render(request, "html/hidratacao.html")
     
+class meupesoView(View):
+    def get(self, request):
+        return render(request, "html/meupeso.html")
+    
+class estresseView(View):
+    def get(self, request):
+        return render(request, "html/tecnicaspbemestar.html")
+    
 class LoginViewCustom(LoginView):
     template_name = 'html/login.html'  # Template que será usado
     form_class = LoginForm  # Formulário de login personalizado
