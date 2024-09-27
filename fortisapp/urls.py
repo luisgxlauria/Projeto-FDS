@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import LoginViewCustom
-from .views import PaginaInicialView, cadastroView, LoginViewCustom, homeView, hidratacaoView, meupesoView, estresseView
+from .views import PaginaInicialView, cadastroView, LoginViewCustom, homeView, hidratacaoView, meupesoView, estresseView, histhidratacaoView
 from django.contrib.auth.views import LogoutView
 from .views import custom_logout_view
 
@@ -13,5 +13,6 @@ urlpatterns = [
     path('hidratacao/', hidratacaoView.as_view(), name="hidratacao"),  # Página de hidratação
     path('sucesso/', LoginViewCustom.as_view(), name='sucesso'),  # Após o cadastro, redireciona para o login (ou ajuste conforme sua necessidade)
     path('meupeso/', meupesoView.as_view(), name="meupeso"),
-    path('estresse/', estresseView.as_view(), name="estresse")
+    path('estresse/', estresseView.as_view(), name="estresse"),
+    path('histhidratacao/', histhidratacaoView.as_view(), name="histhidratacao")
 ]
