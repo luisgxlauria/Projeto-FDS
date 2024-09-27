@@ -16,8 +16,16 @@
         <a href="#meustreinos" tabindex="4"><i class="fas fa-dumbbell"></i> Meus treinos</a>
         <a href="#reduzirestresse" tabindex="5"><i class="fas fa-spa"></i> Reduzir estresse</a>
         <a href="#saude" tabindex="6"><i class="fas fa-heartbeat"></i> Saúde</a>
-        <a href="#logout" tabindex="7"><i class="fas fa-sign-out-alt"></i> Log out</a>
+        
+        <!-- Botão de logout -->
+        <form action="{% url 'logout' %}" method="post" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit" tabindex="7" style="border:none; background:none; color:#000; cursor:pointer;">
+                <i class="fas fa-sign-out-alt"></i> Log out
+            </button>
+        </form>
     </nav>
+    
     <h1>Bem-vindo ao FORTIS!</h1>
     <br>
     <p>Aqui, cuidar da sua saúde é leve e divertido!</p>
