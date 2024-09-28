@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from .models import Usuario
+from .models import Usuario, Hidratacao
 from django.contrib.auth.forms import AuthenticationForm
 
 class UsuarioForm(UserCreationForm):
@@ -28,3 +28,13 @@ class LoginForm(AuthenticationForm):
         label='Senha',
         widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Digite sua senha'})
     )
+
+class HidratacaoForm(forms.ModelForm):
+    class Meta:
+        model = Hidratacao
+        fields = ['quantidade_agua'] 
+        widgets = {
+            'quantidade_agua': forms.NumberInput(attrs={'min': '1', 'required': True}),
+        }
+
+        

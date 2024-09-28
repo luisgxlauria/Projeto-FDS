@@ -1,11 +1,13 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from .forms import UsuarioForm
+from .forms import UsuarioForm, HidratacaoForm, LoginForm
 from django.contrib.auth.views import LoginView
-from .forms import LoginForm
 from django.urls import reverse_lazy
 from django.contrib.auth import logout
-from django.shortcuts import redirect
+from django.contrib.auth.decorators import login_required
+from django.utils.timezone import now
+from django.db.models import Sum
+from .models import Hidratacao
 
 class PaginaInicialView(View):
     def get(self, request):
@@ -52,3 +54,34 @@ def cadastroView(request):
 def custom_logout_view(request):
     logout(request)
     return redirect('login')  # Redireciona para a página de login após o logout
+
+@login_required
+def hidratacaoView(request):
+    if request.method == 'POST':
+        form = HidratacaoForm(request.POST)
+        if form.is_valid():
+            hidratacao = form.save(commit=False)
+            hidratacao.usuario = request.user
+            hidratacao.save()
+            return redirect('hidratacao')
+    else:
+        form = HidratacaoForm()  # Aqui o formulário é instanciado e passado para o template
+
+    hoje = now().date()
+    total_diario = Hidratacao.objects.filter(
+        usuario=request.user, data_hora__date=hoje
+    ).aggregate(total=Sum('quantidade_agua'))['total'] or 0
+
+    return render(request, 'html/hidratacao.html', {
+        'form': form,  # Passa o formulário para o template
+        'total_diario': total_diario
+    })
+
+def historicoHidratacaoView(request):
+    # Busca todos os registros de hidratação do usuário logado, ordenados por data/hora
+    historico = Hidratacao.objects.filter(usuario=request.user).order_by('-data_hora')
+
+    # Passa o histórico para o template
+    return render(request, 'html/historico_hidratacao.html', {
+        'historico': historico
+    })
