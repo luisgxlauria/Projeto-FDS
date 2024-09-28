@@ -29,9 +29,17 @@ class estresseView(View):
     def get(self, request):
         return render(request, "html/tecnicaspbemestar.html")
     
-class histhidratacaoView(View):
+class historicohidratacaoView(View):
     def get(self, request):
         return render(request, "html/historicohidratacao.html")
+    
+class veja_imcView(View):
+    def get (self, request):
+        return render(request, "html/veja_imc.html")
+    
+class acompanha_imcView(View):
+    def get(self, request):
+        return render(request, "html/acompanha_imc.html")
     
 class LoginViewCustom(LoginView):
     template_name = 'html/login.html'  # Template que será usado
@@ -56,7 +64,7 @@ def custom_logout_view(request):
     return redirect('login')  # Redireciona para a página de login após o logout
 
 @login_required
-def hidratacaoView(request):
+def hidratacao(request):
     if request.method == 'POST':
         form = HidratacaoForm(request.POST)
         if form.is_valid():
@@ -77,7 +85,7 @@ def hidratacaoView(request):
         'total_diario': total_diario
     })
 
-def historicoHidratacaoView(request):
+def historicoHidratacao(request):
     # Busca todos os registros de hidratação do usuário logado, ordenados por data/hora
     historico = Hidratacao.objects.filter(usuario=request.user).order_by('-data_hora')
 
@@ -85,3 +93,12 @@ def historicoHidratacaoView(request):
     return render(request, 'html/historico_hidratacao.html', {
         'historico': historico
     })
+
+def calcular_imc(request):
+    imc = None
+    if request.method == 'POST':
+        peso = float(request.POST.get("peso"))
+        altura = float(request.POST.get("altura"))
+        imc = peso / (altura ** 2)  
+    
+    return render(request, "html/meupeso.html", {"imc": imc})

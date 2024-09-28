@@ -11,9 +11,7 @@
         <a href="{% url 'home' %}" tabindex="1">Home</a>
         <a href="{% url 'hidratacao' %}" tabindex="2">Hidratação</a>
         <a href="{% url 'meupeso' %}" tabindex="3">Meu peso</a>
-        <a href="{% url 'meustreinos' %}" tabindex="4">Meus treinos</a>
         <a href="{% url 'estresse' %}" tabindex="5">Reduzir estresse</a>
-        <a href="{% url 'saude' %}" tabindex="6">Saúde</a>
         
         <!-- Botão de logout -->
         <form action="{% url 'logout' %}" method="post" style="display:inline;">
@@ -37,7 +35,7 @@
 
             <div id="total">Total diário de água: {{ total_diario }} ml</div>
 
-            <a href="{% url 'histhidratacao' %}">Ver Histórico de Registros</a>
+            <a href="{% url 'historicohidratacao' %}">Ver Histórico de Registros</a>
         </section>
     </main>
 </body>

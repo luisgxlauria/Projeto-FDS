@@ -41,6 +41,10 @@
             <button type="submit">Calcular IMC</button>
         </form>
 
+        {% if imc %}
+            <h2>Seu IMC é: {{ imc|floatformat:2 }}</h2>
+        {% endif %}
+
         <p>Após calcular, você pode:</p>
         <ul>
             <li><a href="{% url 'veja_imc' %}">Ver seu IMC e criar metas</a></li>
