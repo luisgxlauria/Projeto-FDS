@@ -24,18 +24,56 @@
             </button>
         </form>
     </nav>
+
     <main>
         <h1>Veja Seu Peso</h1>
 
-        <p>Seu IMC atual é: <strong>{{ imc }}</strong></p>
+        <!-- Exibir o IMC e a classificação -->
+        <p>Seu IMC atual é: <strong>{{ imc|floatformat:2 }}</strong></p>
         <p>Classificação: <strong>{{ classificacao }}</strong></p>
 
-        <fieldset>
-            <legend>Estabeleça Metas</legend>
+        <div style="display: flex; justify-content: space-between;">
+            <!-- Exibir metas existentes -->
+            <section style="width: 45%;">
+                <h2>Suas Metas Estabelecidas</h2>
+                {% if metas %}
+                    <ul>
+                        {% for meta in metas %}
+                            <li>
+                                Meta: <strong>{{ meta.tipo_meta }}</strong> 
+                                {{ meta.quantidade }} kg até {{ meta.prazo|date:"d/m/Y" }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>Você ainda não estabeleceu metas.</p>
+                {% endif %}
+            </section>
+
+            <!-- Exibir IMCs anteriores -->
+            <section style="width: 45%;">
+                <h2>IMCs Anteriores</h2>
+                {% if registros_imc %}
+                    <ul>
+                        {% for registro in registros_imc %}
+                            <li>
+                                IMC de <strong>{{ registro.data_registro|date:"d/m/Y" }}</strong>: {{ registro.imc|floatformat:2 }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>Não há registros de IMC anteriores.</p>
+                {% endif %}
+            </section>
+        </div>
+
+        <!-- Formulário para estabelecer metas -->
+        <section>
+            <h2>Estabeleça Metas</h2>
             <form method="post">
                 {% csrf_token %}
                 <div>
-                    <label for="meta">Deseja:</label>
+                    <label for="tipo_meta">Deseja:</label>
                     {{ form.tipo_meta }}
                 </div>
                 <div>
@@ -48,7 +86,7 @@
                 </div>
                 <button type="submit">Registrar Meta</button>
             </form>
-        </fieldset>
+        </section>
     </main>
 </body>
 </html>

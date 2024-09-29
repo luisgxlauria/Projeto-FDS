@@ -8,6 +8,10 @@ from django.contrib.auth.decorators import login_required
 from django.utils.timezone import now
 from django.db.models import Sum
 from .models import Hidratacao
+from .models import Peso
+from .forms import PesoForm
+from .forms import MetaPesoForm
+from .models import MetaPeso
 
 class PaginaInicialView(View):
     def get(self, request):
@@ -102,3 +106,62 @@ def calcular_imc(request):
         imc = peso / (altura ** 2)  
     
     return render(request, "html/meupeso.html", {"imc": imc})
+
+@login_required
+def meupeso(request):
+    if request.method == 'POST':
+        form = PesoForm(request.POST)
+        if form.is_valid():
+            peso = form.save(commit=False)
+            peso.usuario = request.user
+            peso.save()
+            return redirect('veja_imc')
+    else:
+        form = PesoForm()
+
+    return render(request, 'html/meupeso.html', {'form': form})
+
+@login_required
+def veja_imc(request):
+    # Busca o último registro de peso do usuário logado
+    ultimo_registro = Peso.objects.filter(usuario=request.user).order_by('-data_registro').first()
+
+    if ultimo_registro:
+        imc = ultimo_registro.imc
+        classificacao = classificar_imc(imc)
+    else:
+        imc = None
+        classificacao = None
+
+    # Lógica para salvar a meta
+    meta_form = MetaPesoForm(request.POST or None)  # Alteração para não criar outro formulário em GET
+    if request.method == 'POST' and meta_form.is_valid():
+        meta = meta_form.save(commit=False)
+        meta.usuario = request.user
+        meta.save()
+        return redirect('veja_imc')
+
+    # Busca as metas existentes do usuário
+    metas = MetaPeso.objects.filter(usuario=request.user).order_by('-data_criacao')
+
+    # Busca todos os registros de IMC anteriores do usuário
+    registros_imc = Peso.objects.filter(usuario=request.user).order_by('-data_registro')
+
+    return render(request, 'html/veja_imc.html', {
+        'imc': imc,
+        'classificacao': classificacao,
+        'form': meta_form,
+        'metas': metas,
+        'registros_imc': registros_imc  # Passa os registros de IMC anteriores para o template
+    })
+
+# Função que classifica o IMC
+def classificar_imc(imc):
+    if imc < 18.5:
+        return "Abaixo do peso"
+    elif 18.5 <= imc < 24.9:
+        return "Peso normal"
+    elif 25 <= imc < 29.9:
+        return "Sobrepeso"
+    else:
+        return "Obesidade"

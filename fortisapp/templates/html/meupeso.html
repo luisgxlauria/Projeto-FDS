@@ -24,6 +24,7 @@
             </button>
         </form>
     </nav>
+
     <main>
         <h1>Bem-vindo!</h1>
         <p>Esta seção calcula seu Índice de Massa Corporal (IMC) com base no seu peso e altura. Insira seus dados para ver sua classificação de peso e obter uma visão rápida do seu estado nutricional. Vamos começar?</p>
@@ -44,12 +45,6 @@
         {% if imc %}
             <h2>Seu IMC é: {{ imc|floatformat:2 }}</h2>
         {% endif %}
-
-        <p>Após calcular, você pode:</p>
-        <ul>
-            <li><a href="{% url 'veja_imc' %}">Ver seu IMC e criar metas</a></li>
-            <li><a href="{% url 'acompanha_imc' %}">Acompanhar seus IMCs anteriores</a></li>
-        </ul>
     </main>
 </body>
 </html>
