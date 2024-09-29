@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Técnicas para bem-estar</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/tecnicas.css' %}">
 </head>
 <body>
     <nav class="menu">
@@ -34,11 +35,11 @@
     <label>Selecione a técnica que mais se adapta às suas necessidades:</label>
     <br>
 
-    <a href="{% url 'alongamento' %}">Ver Histórico de Registros</a>
+    <a href="{% url 'alongamento' %}">Alongamento</a>
     <br>
-    <a href="{% url 'respiracaoguiada' %}">Ver Histórico de Registros</a>
+    <a href="{% url 'respiracaoguiada' %}">Respiração guiada</a>
     <br>
-    <a href="{% url 'relaxamentomuscular' %}">Ver Histórico de Registros</a>
+    <a href="{% url 'relaxamentomuscular' %}">Relaxamento muscular</a>
 
 </body>
 </html>
