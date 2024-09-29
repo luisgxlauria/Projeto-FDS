@@ -53,9 +53,21 @@ class LoginViewCustom(LoginView):
 class tecnicaspbemestarView(View):
     def get(self, request):
         return render(request, "html/tecnicaspbemestar.html")
+    
+class relaxamentomuscularView(View):
+    def get(self, request):
+        return render(request, "html/relaxamentomuscular.html")
 
     def get_success_url(self):
         return reverse_lazy('home')  # Redireciona para a home após login
+    
+class respiracaoguiadaView(View):
+    def get(self, request):
+        return render (request, 'html/respiracaoguiada.html')
+    
+class alongamentoView(View):
+    def get(self, request):
+        return render(request, 'html/alongamento.html')
 
 def cadastroView(request):
     if request.method == 'POST':
