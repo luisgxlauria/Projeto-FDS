@@ -50,6 +50,10 @@ class LoginViewCustom(LoginView):
     form_class = LoginForm  # Formulário de login personalizado
     redirect_authenticated_user = True  # Redireciona se o usuário já estiver logado
 
+class tecnicaspbemestarView(View):
+    def get(self, request):
+        return render(request, "html/tecnicaspbemestar.html")
+
     def get_success_url(self):
         return reverse_lazy('home')  # Redireciona para a home após login
 
