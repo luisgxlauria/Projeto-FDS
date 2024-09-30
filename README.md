@@ -120,17 +120,19 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 <br>
 ### 📄 Jira Backlog
 
-  <img src="https://github.com/user-attachments/assets/79e0bcd9-bda3-42ff-96be-403f839acebc" alt="Repository Size">
+  <img src="![WhatsApp Image 2024-09-30 at 19 36 15](https://github.com/user-attachments/assets/a3035412-2019-4227-9381-307980e4eb6c)
+" alt="Repository Size">
   <br>
 
-### 📄 Jira Board 
+### 📄 Jira sprint 2 
 
-  <img src="https://github.com/user-attachments/assets/b70c943d-c53d-4f7c-a3f6-7094c42383ee" alt="Repository Size">
+  <img src="![WhatsApp Image 2024-09-30 at 19 40 56](https://github.com/user-attachments/assets/1605fa94-bb10-41d3-8199-210023dd8eca)
+" alt="Repository Size">
 
 <br>
 <br>
 
-### 🎥 Screencast do Protótipo
+### 🎥 Screencast do sistema
 
 <p style="text-align: center; text-decoration: none;">
   <a href="https://www.youtube.com/watch?v=F6OezYXLEes" style="text-decoration: none;">
