@@ -134,7 +134,7 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 
 <p style="text-align: center; text-decoration: none;">
   <a href="https://www.youtube.com/watch?v=F6OezYXLEes" style="text-decoration: none;">
-    <span>🔗 Screencast do protótipo Lo-Fi (1)</span>
+    <span>🔗 Screencast do uso do sistema)</span>
   </a>
 </p>
 
