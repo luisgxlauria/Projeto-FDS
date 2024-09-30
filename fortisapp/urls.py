@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import PaginaInicialView, cadastroView, LoginViewCustom, homeView, hidratacao, meupeso, estresseView, historicohidratacaoView, custom_logout_view, veja_imcView, acompanha_imcView, veja_imc, tecnicaspbemestarView, relaxamentomuscularView, respiracaoguiadaView, alongamentoView
+from .views import PaginaInicialView, cadastroView, LoginViewCustom, homeView, hidratacao, meupeso, estresseView, historicohidratacaoView, custom_logout_view, veja_imcView, acompanha_imcView, veja_imc, tecnicaspbemestarView, relaxamentomuscularView, respiracaoguiadaView, alongamentoView, sentimentoView, historicohumorView
 from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
@@ -19,4 +19,6 @@ urlpatterns = [
     path('relaxamentomuscular/', relaxamentomuscularView.as_view(), name= "relaxamentomuscular"),
     path('respiracaoguiada', respiracaoguiadaView.as_view(), name= "respiracaoguiada"),
     path('alongamento/', alongamentoView.as_view(), name= "alongamento"),
+    path('sentimento/', sentimentoView.as_view(), name= "sentimento"),
+    path('historicohumor/', historicohumorView.as_view(), name= "historicohumor"),
 ]

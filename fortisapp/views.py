@@ -68,6 +68,14 @@ class respiracaoguiadaView(View):
 class alongamentoView(View):
     def get(self, request):
         return render(request, 'html/alongamento.html')
+    
+class sentimentoView(View):
+    def get (self,request):
+        return render(request, 'html/sentimento.html')
+    
+class historicohumorView(View):
+    def get (self,request):
+        return render(request, 'html/historicohumor.html')
 
 def cadastroView(request):
     if request.method == 'POST':
