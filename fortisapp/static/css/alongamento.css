@@ -57,6 +57,17 @@ p {
     line-height: 1.6;
     padding: 0 20px;
 }
+a {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
 br {
     margin: 10px 0; /* Adiciona espaçamento entre quebras de linha */
