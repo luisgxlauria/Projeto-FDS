@@ -117,6 +117,29 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 <details>
 <summary>📧 Entrega 2</summary>
 </details>
+<br>
+### 📄 Jira Backlog
+
+  <img src="https://github.com/user-attachments/assets/79e0bcd9-bda3-42ff-96be-403f839acebc" alt="Repository Size">
+  <br>
+
+### 📄 Jira Board 
+
+  <img src="https://github.com/user-attachments/assets/b70c943d-c53d-4f7c-a3f6-7094c42383ee" alt="Repository Size">
+
+<br>
+<br>
+
+### 🎥 Screencast do Protótipo
+
+<p style="text-align: center; text-decoration: none;">
+  <a href="https://www.youtube.com/watch?v=F6OezYXLEes" style="text-decoration: none;">
+    <span>🔗 Screencast do protótipo Lo-Fi (1)</span>
+  </a>
+</p>
+
+<br>
+
 
 <details>
 <summary>📧 Entrega 3</summary>
