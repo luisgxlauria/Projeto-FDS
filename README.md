@@ -48,8 +48,6 @@ FORTIS (Força, Organização, Resiliência, Transformação e Inspiração Saud
 
 Felipe Barros de Carvalho - fbc@cesar.school
 
-# Autores:
-
 João Lucas Veiga Robalinho Ferraz - jlvrf@cesar.school
 
 Lucas Rodrigues Campos - lrc@cesar.school
