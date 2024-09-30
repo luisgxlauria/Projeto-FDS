@@ -118,15 +118,16 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 <summary>📧 Entrega 2</summary>
 
 <br>
+
 ### 📄 Jira Backlog
 
-  <img src="![WhatsApp Image 2024-09-30 at 19 36 15](https://github.com/user-attachments/assets/a3035412-2019-4227-9381-307980e4eb6c)
+  <img src="(https://github.com/user-attachments/assets/a3035412-2019-4227-9381-307980e4eb6c)
 " alt="Repository Size">
   <br>
 
 ### 📄 Jira sprint 2 
 
-  <img src="![WhatsApp Image 2024-09-30 at 19 40 56](https://github.com/user-attachments/assets/1605fa94-bb10-41d3-8199-210023dd8eca)
+  <img src="(https://github.com/user-attachments/assets/1605fa94-bb10-41d3-8199-210023dd8eca)
 " alt="Repository Size">
 
 <br>
