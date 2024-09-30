@@ -116,7 +116,7 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 
 <details>
 <summary>📧 Entrega 2</summary>
-</details>
+
 <br>
 ### 📄 Jira Backlog
 
@@ -139,6 +139,7 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 </p>
 
 <br>
+</details>
 
 
 <details>
