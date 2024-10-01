@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Treinos</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/meustreinos.css' %}">
+    <title>Adicionar treino</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/adicionartreino.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -29,7 +29,7 @@
     </nav>
 
     <main>
-        <h1>Veja aqui seus treinos registrados</h1>
+        <h1>Selecione o treino que você deseja adicionar</h1>
         <br>
         <a href="{% url 'costas' %}">Treino costas</a><br>
         <a href="{% url 'inferiores' %}">Treino inferiores</a><br>
@@ -38,7 +38,7 @@
         <a href="{% url 'ombro' %}">Treino ombro</a><br>
 
         <div>
-            <a href="{% url 'adicionar_treino' %}">Adicionar Treino</a><br>
+            <a href="{% url 'meustreinos' %}">Voltar aos meus treinos</a><br>
             <a href="{% url 'editar_treino' %}">Editar Treino Existente</a>
         </div>
     </main>
