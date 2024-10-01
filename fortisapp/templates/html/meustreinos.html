@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Treinos</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/meustreinoss.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="menu" role="navigation" aria-label="Main Navigation">
+        <a href="{% url 'home' %}" tabindex="1" aria-label="Home"><i class="fa-light fa-house"></i> Home</a>
+        <a href="{% url 'hidratacao' %}" tabindex="2" aria-label="Hidratação"><i class="fas fa-water"></i> Hidratação</a>
+        <a href="{% url 'meupeso' %}" tabindex="3" aria-label="Meu Peso"><i class="fas fa-weight"></i> Meu peso</a>
+        <a href="{% url 'meustreinos' %}" tabindex="4" aria-label="Meus Treinos"><i class="fas fa-dumbbell"></i> Meus treinos</a>
+        <a href="{% url 'estresse' %}" tabindex="5" aria-label="Reduzir Estresse"><i class="fas fa-spa"></i> Reduzir estresse</a>
+        <a href="#saude" tabindex="6" aria-label="Saúde"><i class="fas fa-heartbeat"></i> Saúde</a>
+
+        <!-- Botão de logout -->
+        <form action="{% url 'logout' %}" method="post" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit" tabindex="7" style="border:none; background:none; color:#000; cursor:pointer;" aria-label="Log out">
+                <i class="fas fa-sign-out-alt"></i> Log out
+            </button>
+        </form>
+    </nav>
+
+    <main>
+        <h1>Veja aqui seus treinos registrados</h1>
+        <br>
+        <a href="{% url 'costas' %}">Treino costas</a><br>
+        <a href="{% url 'inferiores' %}">Treino inferiores</a><br>
+        <a href="{% url 'peito' %}">Treino peito</a><br>
+        <a href="{% url 'superiores' %}">Treino superiores</a><br>
+        <a href="{% url 'ombro' %}">Treino ombro</a><br>
+
+        <div>
+            <a href="{% url 'adicionar_treino' %}">Adicionar Treino</a><br>
+            <a href="{% url 'editar_treino' %}">Editar Treino Existente</a>
+        </div>
+    </main>
+</body>
+
+</html>
