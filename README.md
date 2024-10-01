@@ -126,7 +126,7 @@ Marina Hoffmann Guimarães - mhg@cesar.school
 
 ### 📄 Jira sprint 2 
 
-  <img src="(https://github.com/user-attachments/assets/65b4f820-fdff-4e0d-9c93-7a1e5b9e3b0e" alt="Repository Size">
+  <img src="https://github.com/user-attachments/assets/65b4f820-fdff-4e0d-9c93-7a1e5b9e3b0e" alt="Repository Size">
 
 <br>
 <br>
