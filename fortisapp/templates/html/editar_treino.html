@@ -38,7 +38,7 @@
             </div>
             <br>
 
-            <form action="{% url 'atualizar_treino' %}" method="post">
+            <form action="{% url 'editar_treino' %}" method="post">
                 {% csrf_token %}
                 <label for="musculo">Selecione a parte do corpo:</label>
                 <select id="musculo" name="musculo" required>
