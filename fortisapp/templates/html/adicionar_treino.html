@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Treino</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/editartreino.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="menu" role="navigation" aria-label="Main Navigation">
+        <a href="{% url 'home' %}" tabindex="1" aria-label="Home"><i class="fa-light fa-house"></i> Home</a>
+        <a href="{% url 'hidratacao' %}" tabindex="2" aria-label="Hidratação"><i class="fas fa-water"></i> Hidratação</a>
+        <a href="{% url 'meupeso' %}" tabindex="3" aria-label="Meu Peso"><i class="fas fa-weight"></i> Meu peso</a>
+        <a href="{% url 'meustreinos' %}" tabindex="4" aria-label="Meus Treinos"><i class="fas fa-dumbbell"></i> Meus treinos</a>
+        <a href="{% url 'estresse' %}" tabindex="5" aria-label="Reduzir Estresse"><i class="fas fa-spa"></i> Reduzir estresse</a>
+        <a href="#saude" tabindex="6" aria-label="Saúde"><i class="fas fa-heartbeat"></i> Saúde</a>
+
+        <!-- Botão de logout -->
+        <form action="{% url 'logout' %}" method="post" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit" tabindex="7" class="logout-button" aria-label="Log out">
+                <i class="fas fa-sign-out-alt"></i> Log out
+            </button>
+        </form>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Adicionar Novo Treino</h1>
+            <br>
+            <div>
+                <a href="{% url 'meustreinos' %}">Voltar aos meus treinos</a><br>
+                <a href="{% url 'editar_treino' %}">Editar Treino</a><br>
+            </div>
+            <br>
+
+            <form action="{% url 'salvar_treino' %}" method="post">
+                {% csrf_token %}
+                <label for="musculo">Selecione a parte do corpo:</label>
+                <select id="musculo" name="musculo" required>
+                    <option value="costas">Costas</option>
+                    <option value="inferiores">Inferiores</option>
+                    <option value="peito">Peito</option>
+                    <option value="superiores">Superiores</option>
+                    <option value="ombro">Ombro</option>
+                </select>
+                <br><br>
+
+                <label for="exercicio">Novo Exercício:</label>
+                <input type="text" id="exercicio" name="exercicio" required>
+                <br><br>
+
+                <label for="repeticoes">Quantidade de Repetições:</label>
+                <input type="number" id="repeticoes" name="repeticoes" min="1" required>
+                <br><br>
+
+                <button type="submit">Adicionar Treino</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
