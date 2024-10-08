@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - grupofortisfds
+name: Build and deploy Python app to Azure Web App - projetofortis
 
 on:
   push:
@@ -74,10 +74,10 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0CD8F7030DF649A1B94179DB33CE3EB5 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_4D1E57DA7CFB4D90B87AEECACE890844 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_90A4EE7944554419A0013E334667EED6 }}
-
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B0ED36472BD64C6A990A7BA8793D9FD2 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_963F1B60B8E24408A4424C43C8F688D9 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F2C7FD5919794EF1BB744087FDF9F9FF }}
+          
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
