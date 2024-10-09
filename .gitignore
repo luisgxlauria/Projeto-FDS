@@ -19,10 +19,6 @@
 .DS_Store
 Thumbs.db
 
-# Virtualenv
-venv/
-ENV/
-env/
 
 # Arquivos de migração
 **/migrations/*
