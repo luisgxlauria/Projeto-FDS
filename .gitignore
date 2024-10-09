@@ -3,7 +3,6 @@
 *.pot
 *.pyc
 *.pyo
-*.env
 *.coverage
 *.cover
 *.mo
