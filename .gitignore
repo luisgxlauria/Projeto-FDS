@@ -3,7 +3,6 @@
 *.pot
 *.pyc
 *.pyo
-*.env
 *.coverage
 *.cover
 *.mo
@@ -20,10 +19,6 @@
 .DS_Store
 Thumbs.db
 
-# Virtualenv
-venv/
-ENV/
-env/
 
 # Arquivos de migração
 **/migrations/*
